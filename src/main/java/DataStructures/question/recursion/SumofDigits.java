@@ -10,6 +10,10 @@ public class SumofDigits {
 			return fun(n / 10) + n % 10;
 		}//time: theta(n), aux: theta(n)
 		
+		
+		//------------------------------
+		
+		
 		static int fun1(int n) //iterative
 		{
 			int res=0;
