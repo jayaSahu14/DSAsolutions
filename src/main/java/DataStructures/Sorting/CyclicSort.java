@@ -2,7 +2,7 @@ package DataStructures.Sorting;
 
 public class CyclicSort {
 
-	
+	//when no. is from 1-n 
 	    public static void main (String[] args) 
 	    {
 	        int arr[] = { 20,40,50,10,30 }; 
