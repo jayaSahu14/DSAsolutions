@@ -35,7 +35,7 @@ public class RemoveDups {
 		head = new_node;
 	}
 	
-	void printList()
+ void printList()
 	{
 		Node temp = head;
 		while (temp != null) {
