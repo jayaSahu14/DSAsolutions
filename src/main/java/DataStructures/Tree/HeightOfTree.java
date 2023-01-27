@@ -11,6 +11,8 @@ class BinaryTree {
 		if (node == null)
 			return 0;
 		else {
+			
+		//	return Math.max(maxDepth(node.left), maxDepth(node.right)) +1;}
 			int lDepth = maxDepth(node.left);
 			int rDepth = maxDepth(node.right);
 
@@ -18,8 +20,8 @@ class BinaryTree {
 				return (lDepth + 1);
 			else
 				return (rDepth + 1);
-		}
-	}
+		}	}
+	
 
 	public static void main(String[] args)
 	{
