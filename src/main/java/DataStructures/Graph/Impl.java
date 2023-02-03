@@ -64,7 +64,22 @@ public class Impl {
 		}
 	}
 	
-	
+	public static void printAllPath //O(v^v) tc
+	        (ArrayList<Edge>[] graph, int curr, boolean vis[],String path, int target)
+	{
+		
+		if(curr==target) {
+			System.out.println(path); return;	
+		}
+		for(int i=0; i<graph[curr].size(); i++) {
+			Edge e=graph[curr].get(i);
+			if(!vis[e.dest]) {
+				vis[curr]=true;
+				printAllPath(graph, e.dest, vis, path+e.dest, target);
+				vis[curr]=false;
+			}
+		}		
+	}
 	
 	
 	
@@ -135,10 +150,14 @@ public class Impl {
 		//		dfs(graph,0,vis);
 			}
 		}
+		int src=0;
+		int target=5;
+		System.out.println("////");
+		printAllPath(graph, src, new boolean[V], "0", target);
 		
 	
 		
-		
+	     
 		
 		
 		
