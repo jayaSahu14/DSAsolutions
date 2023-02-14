@@ -15,7 +15,7 @@ public class tz {
 
 	public static void main (String[] args) {
 		
-		int number = 251;
+		int number = 100;
 
 		System.out.println(countTrailingZeros(number));
 

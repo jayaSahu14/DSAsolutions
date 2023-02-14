@@ -1,5 +1,7 @@
 package DataStructures.Arrays;
 
+import java.util.Arrays;
+
 public class ChkForSorted {
 	
 	public static boolean isSorted(int arr[], int size) {
@@ -16,6 +18,13 @@ public class ChkForSorted {
 	public static void main(String[] args) {
 		 int arr[]={5,20,25,30,15};
 	     System.out.println(isSorted(arr, 5));
+	     System.out.println("------------");
+	     int intKey = 22;
+	     int intArr[] = { 10, 20, 15, 22, 35 };
+	     Arrays.sort(intArr);
+	     System.out.println(
+	             intKey + " found at index = "
+	             + Arrays.binarySearch(intArr, intKey));
 
 	}
 

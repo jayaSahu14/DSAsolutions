@@ -21,4 +21,5 @@ public class MaximumDifference {
 	}
 
 
-//find the min element, and keep subtracting every element from it, the greatst elemnet - it will give result
+//find the min element, and keep subtracting every element from it, 
+//the greatst elemnet - it will give result
