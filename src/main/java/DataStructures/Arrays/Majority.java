@@ -1,6 +1,6 @@
 package DataStructures.Arrays;
 
-public class FindMajority {
+public class Majority {
 	
 	 static int findMajority(int arr[], int n)
 	    {

@@ -1,6 +1,6 @@
 package DataStructures.Arrays;
 
-public class Toggkle {
+public class MinFlips10 {
 
 	    static void printGroups(int arr[], int n)
 	    {

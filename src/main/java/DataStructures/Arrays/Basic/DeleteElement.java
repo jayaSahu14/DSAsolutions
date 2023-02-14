@@ -1,4 +1,4 @@
-package DataStructures.Arrays;
+package DataStructures.Arrays.Basic;
 
 public class DeleteElement {
 	

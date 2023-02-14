@@ -1,4 +1,4 @@
-package DataStructures.Arrays;
+package DataStructures.Arrays.Basic;
 
 import ch.qos.logback.core.joran.sanity.Pair;
 
