@@ -28,7 +28,7 @@ public class MergeFunction {
 	 public static void main (String[] args) 
 	    {
 	        int a[] = new int[]{10,15,20,40,8,11,15,22,25};  //10 15 20 40 8 11 15 22 10 15 20 40 8 11 15 22 25 
-		    int l=0,h=8,m=3;
+		    int l=0,h=8,m=3; //indexes
 	        
 	        merge1(a,l,m,h);
 		    for(int x: a)
