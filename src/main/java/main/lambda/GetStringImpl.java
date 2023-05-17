@@ -9,3 +9,4 @@ public class GetStringImpl implements GetString {
 	}
 
 }
+// redundent

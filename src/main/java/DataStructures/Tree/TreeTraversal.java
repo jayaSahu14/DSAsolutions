@@ -16,8 +16,8 @@ public class TreeTraversal {
 				
 				if(root!=null) {
 					System.out.println(root.key + "-");
-					inOrder(root.left);				
-					inOrder(root.right);
+					preOrder(root.left);				
+					preOrder(root.right);
 				}
 				
 			}
@@ -25,8 +25,8 @@ public class TreeTraversal {
 		static void postOrder(Node root) {
 			
 			if(root!=null) {
-				inOrder(root.left);
-				inOrder(root.right);
+				postOrder(root.left);
+				postOrder(root.right);
 				System.out.println(root.key + "-");
 			}
 			

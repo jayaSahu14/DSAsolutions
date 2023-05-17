@@ -35,3 +35,7 @@ public class BubbleSort {
 		    }
 		}
 	}
+
+/* simple bubble sort, in each case, put biggest to last, 
+ * 
+ */

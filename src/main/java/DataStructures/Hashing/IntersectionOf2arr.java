@@ -31,4 +31,4 @@ public class IntersectionOf2arr {
 	        }
 	        return res;
 	    }
-	}
+	}  (hs.contains(sum-arr[i]))

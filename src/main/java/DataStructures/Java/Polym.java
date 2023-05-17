@@ -1,4 +1,4 @@
-package DataStructures.basicJava;
+package DataStructures.Java;
 
 public class Polym {
 
@@ -13,4 +13,14 @@ public class Polym {
 		    b.run();  
 		  }  
 		}   // running safely with 60km.
+		
+		
+		public static void main(String args[])
+		{
+			String a="abc";
+			String b="bc";
+			System.out.println(a.compareTo(b));
+			
+			
+		}
 }

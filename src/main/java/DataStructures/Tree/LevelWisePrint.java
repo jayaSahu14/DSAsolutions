@@ -21,8 +21,8 @@ public class LevelWisePrint {
 	   public static void printLevel1(Node root){
 	        if(root==null)return;
 	        Queue<Node> q=new LinkedList<>();
-	        q.add(root);
-	        q.add(null);
+	        q.add(root); 
+	        q.add(null);  //------
 	        while(q.size()>1){
 	            Node curr=q.poll();
 	            if(curr==null){
@@ -39,7 +39,7 @@ public class LevelWisePrint {
 	    }
 	   
 	   
-	   public static void printLevel2(Node root){
+	   public static void printLevel2(Node root){  
 	        if(root==null)return;
 	        Queue<Node> q=new LinkedList<>();
 	        q.add(root);

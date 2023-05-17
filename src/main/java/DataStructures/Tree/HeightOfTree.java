@@ -1,9 +1,7 @@
 package DataStructures.Tree;
 
-public class HeightOfTree {}
+public class HeightOfTree {
 
-
-class BinaryTree {
 	Node root;
 
 	int maxDepth(Node node)
@@ -25,7 +23,7 @@ class BinaryTree {
 
 	public static void main(String[] args)
 	{
-		BinaryTree tree = new BinaryTree();
+		HeightOfTree tree = new HeightOfTree();
 
 		tree.root = new Node(1);
 		tree.root.left = new Node(2);
@@ -35,6 +33,6 @@ class BinaryTree {
 
 		System.out.println("Height of tree is "
 						+ tree.maxDepth(tree.root));
-	}
+	
 }
-
+}

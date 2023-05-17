@@ -3,7 +3,10 @@ package main.stream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class Product{  
     int id;  
@@ -30,16 +33,33 @@ public class JavaStreamExample {
                     .count();  
         System.out.println(count);  
      
-    
+    //---------------------------------------------------
     
     List<String> names = Arrays.asList("Ava", "Alberto", "Sarah", "Sam", "Smith");
-    names = names.stream().filter(s -> s.startsWith("S"))
-    		.collect(Collectors.toList());
+    names = names.stream().filter(s -> s.startsWith("S")).collect(Collectors.toList());
      for (String name : names) {
-   	System.out.println("Names Start with S: " + name);
+	System.out.println("Names Start with S: " + name);}
+    
+//  names.stream().filter(s -> s.startsWith("S")).forEach(System.out::println);
  
+    Stream<Integer>stream=Stream.of(1,2,3,4,5);
+    Integer[]val= new Integer[]{1,2,3,4,5,6};
+    Stream<Integer>stream1=Arrays.stream(val);
+    
+  //--------------------------------------------------------------------------------------------------------  
+    
+    
+    int a[]= {1,2,3,4,5};
+    OptionalInt a1=Arrays.stream(a).reduce((b1,b2)->(b1+b2));
+    System.out.println(a1);
+    
+    Optional<String> String_combine = Arrays.stream()
+                                       .reduce( (str1, str2) -> str1 + "-" + str2  );
+    if (String_combine.isPresent()) {
+        System.out.println(String_combine.get());
+    }
     
      }
-     }
+     
     
 }  

@@ -1,9 +1,10 @@
-package main.compaartor;
+package DataStructures.Java.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student>
+{
 	int rollno;
 	String name;
 	int age;

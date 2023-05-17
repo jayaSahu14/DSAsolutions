@@ -1,4 +1,4 @@
-package DataStructures.BST;
+package DataStructures.Tree.BST;
 
 public class Search {
 	

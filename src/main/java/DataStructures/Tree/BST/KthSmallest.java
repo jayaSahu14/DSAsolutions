@@ -1,4 +1,4 @@
-package DataStructures.BST;
+package DataStructures.Tree.BST;
 
  class Node1 {
     int data;

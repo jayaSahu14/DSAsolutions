@@ -1,4 +1,4 @@
-package main.compaartor;
+package DataStructures.Java.comparator;
 import java.util.*;
 
 
