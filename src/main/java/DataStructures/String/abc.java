@@ -17,5 +17,8 @@ public class abc {
 	            System.out.println((char)(i+'a')+" "+count[i]);
 	        }
 	    }
+	    
+	    char ch='d'-'a';
+    	int castAscii = (int) ch; System.out.println(castAscii);
 	}
 	} 

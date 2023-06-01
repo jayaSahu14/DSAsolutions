@@ -1,5 +1,6 @@
 package DataStructures.Hashing.probs;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,5 +23,20 @@ public class one {
          return 0;
     }
 	
+    
+    public static void add(Integer arr[], int arr2[]) {
+    	
+    	HashMap<Integer,Integer> hm= new HashMap<>();
+    	int i=0,j=0;
+    	while( i< arr.length && j<arr2.length) {
+    		hm.put(arr[i], arr[j]);
+    	}
+    	
+    	
+    	
+    }
+    
+    
+    
 	
 }

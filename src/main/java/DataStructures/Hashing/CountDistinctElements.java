@@ -1,5 +1,6 @@
 package DataStructures.Hashing;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set; // dups not allowed
 
@@ -20,4 +21,13 @@ public class CountDistinctElements {
 	    
 	       return hs.size();        
 	    }
+	    
+	    static int countDistinct1(int arr[], int n) {
+	    HashMap<Character, Integer> cnt = new HashMap<>();
+		for (char c: s.toCharArray()) {
+			cnt.put(c, cnt.getOrDefault(c, 0) + 1);
+		}}
+
+
+
 }

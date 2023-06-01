@@ -26,9 +26,7 @@ class HelloWorld1 extends HelloWorld {
  * 
  * Hashmap<String, Integer> hm= new Hashmap<>(); 
  * 
- count,
- *    hm.put(abc), getOrDefault( count++, 1);
- */
+ co
 
 //
 

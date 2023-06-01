@@ -1,4 +1,4 @@
-package DataStructures.Tree;
+npackage DataStructures.Tree;
 
 class Node  
 { 

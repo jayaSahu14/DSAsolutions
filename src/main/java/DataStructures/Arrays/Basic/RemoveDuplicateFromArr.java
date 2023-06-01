@@ -26,6 +26,7 @@ public class RemoveDuplicateFromArr {
 	    {  
 		 
 		 int arr1[]={5,5,8,20,15,15,15,16};
+		
 		int arr2[]= intRemoveDuplicate(arr1,8);
 		for(int i=0; i<arr2.length; i++) {
 			System.out.print(arr2[i]);
