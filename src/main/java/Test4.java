@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Test4 {
 	
@@ -16,7 +17,9 @@ public class Test4 {
 		System.out.println(i);
 	}
 	
-	
+	Iterator it= ar.iterator();	
+	while(it.hasNext()) {
+	System.out.println(it.next());}
 
 
 }
