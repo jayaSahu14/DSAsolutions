@@ -6,7 +6,8 @@ public class t3 {
 		int res=1;
 		for(int i=1;i<c.length;i++) {
 			if(c[res-1]!=c[i]) {
-				c[res]=c[i]; res++;
+				c[res]=c[i]; 
+				res++;
 			}
 		}
 		for(int i=0;i<c.length;i++) {

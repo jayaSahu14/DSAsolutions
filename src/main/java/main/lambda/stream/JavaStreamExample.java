@@ -59,6 +59,7 @@ public class JavaStreamExample {
     	
     List<Integer> a= Arrays.asList(1, 2, 3, 4, 5);
    
+   a.stream().filter(s->s==5).forEach(System.out::println); 
     Optional<Integer> a1=a.stream().reduce((b1,b2)->(b1+b2));
     System.out.println("-------------------------------");
     System.out.println(a1);
