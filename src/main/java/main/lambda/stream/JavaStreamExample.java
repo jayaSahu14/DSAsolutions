@@ -13,8 +13,8 @@ import ch.qos.logback.core.recovery.ResilientSyslogOutputStream;
 class Product{  
     int id;  
     String name;  
-    float price;  
-    public Product(int id, String name, float price) {  
+    Integer price;  
+    public Product(int id, String name, int price) {  
         this.id = id;  
         this.name = name;  
         this.price = price;  
@@ -24,20 +24,32 @@ public class JavaStreamExample {
     public static void main(String[] args) {  
         List<Product> productsList = new ArrayList<Product>();  
         //Adding Products  
-        productsList.add(new Product(1,"HP Laptop",25000f));  
-        productsList.add(new Product(2,"Dell Laptop",30000f));  
-        productsList.add(new Product(3,"Aenevo Laptop",28000f));  
-        productsList.add(new Product(4,"Aony Laptop",28000f));  
-        productsList.add(new Product(5,"Apple Laptop",90000f));  
+        productsList.add(new Product(1,"HP",25000));  
+        productsList.add(new Product(2,"Dell ",30000));  
+        productsList.add(new Product(3,"Aenevo ",28000));  
+        productsList.add(new Product(4,"Aony ",28000));  
+        productsList.add(new Product(5,"Apple ",90000));  
       
+        List<Integer> v= new ArrayList<>();
+        v.add(1);
+        v.add(2);
+        List<Integer> v1= Arrays.asList(1,2,3,4,5);
+
+        
         
       //  productsList=
         		productsList.stream()  
                     .filter(product->product.price<30000)  
                     .filter(s->s.name.startsWith("A")).forEach(System.out::println);
-               //     collect(Collectors.toList());
+               //     collect(Collectors.toList());s
         for (Product name : productsList) {
         	System.out.println("Names Start with a: " + name.name);}
+        System.out.println("sorting---------------------------------");
+       List<Product> abc =productsList.stream()
+        .sorted((s1,s2)->s1.price.compareTo(s2.price)).collect(Collectors.toList());
+       for (Product name : abc) {
+       	System.out.println("cost sorting " + name.name+ name.price);}
+       
         
         long count = productsList.stream()  
                 .filter(product->product.price<30000)  
@@ -60,6 +72,7 @@ public class JavaStreamExample {
     List<Integer> a= Arrays.asList(1, 2, 3, 4, 5);
    
    a.stream().filter(s->s==5).forEach(System.out::println); 
+   a.stream().map(s->s*5).forEach(System.out::println); 
     Optional<Integer> a1=a.stream().reduce((b1,b2)->(b1+b2));
     System.out.println("-------------------------------");
     System.out.println(a1);
