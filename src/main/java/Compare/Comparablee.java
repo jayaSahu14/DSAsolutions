@@ -3,6 +3,7 @@ package Compare;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Comparablee{	
@@ -42,3 +43,28 @@ class Student implements Comparable<Student>{
 			return -1;
 	
 }}
+
+
+
+
+class Student1 implements Comparator<Student>{
+	int age;
+	String name;
+	
+	public Student1(int age, String name)
+	{
+		this.age=age;
+		this.name=name;
+	}
+	
+	public String toString() {
+		return "Student [age=" + age + ", name=" +name +"]";
+	}
+	
+	@Override
+	public int compare(Student o1, Student o2) {
+		if(o1.age >o2.age)
+			return 1;
+		else
+			return -1;
+	}}

@@ -20,3 +20,5 @@ public class PQ {
 		
 	}
 }
+
+// max heap: max val max priority

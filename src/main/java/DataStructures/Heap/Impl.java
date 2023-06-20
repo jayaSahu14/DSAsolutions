@@ -3,7 +3,7 @@ package DataStructures.Heap;
 public class Impl{
 	
 	public static class MinHeap{
-		int arr[];
+	static	int arr[];
 		int size;
 		int capacity;
 		

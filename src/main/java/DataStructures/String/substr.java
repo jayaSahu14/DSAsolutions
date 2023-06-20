@@ -45,3 +45,19 @@ class GFG {
 }
 
 //This code is contributed by JaideepPyne.
+
+
+
+
+
+
+
+/*
+ * for(int i=0;i<str.length();i++){
+ * String str1=str.substring(i);
+ * 	System.out.println(str1);}
+ * 
+ */
+
+
+

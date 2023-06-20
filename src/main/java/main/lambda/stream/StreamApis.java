@@ -66,8 +66,20 @@ public class StreamApis<T> {
 	  List<String> list = Arrays.asList("Geeks", "for", "gfg",
               "GeeksforGeeks", "GeeksQuiz");
       list.stream().mapToInt(str -> str.length()).forEach(System.out::println);
-}}
-	
+}
+	 private static void m2() {
+		 
+		  List<String> list = Arrays.asList("Geeks", "for", "gfg",
+	              "GeeksforGeeks", "GeeksQuiz");
+//		  list.stream().filter(s-> s.length()>6).filter(s->s.length()<8)
+		  list.stream().filter(s-> s.length()>6 && s.length()<8)
+		  .collect(Collectors.toList());
+		 //	  list.stream().filter(s-> s.length()>6 && s.length()<8)
+		 
+		 
+	 }
+	 
+}
 	
 	
 	

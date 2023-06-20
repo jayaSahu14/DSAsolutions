@@ -84,10 +84,10 @@ public class JavaStreamExample {
 //    OptionalInt a1=Arrays.stream(a).reduce((b1,b2)->(b1+b2));
 //    System.out.println(a1);
 //    
-//    Optional<String> String_combine = Arrays.stream()
+//    Optional<String> z = Arrays.stream()
 //                                       .reduce( (str1, str2) -> str1 + "-" + str2  );
-//    if (String_combine.isPresent()) {
-//        System.out.println(String_combine.get());
+//    if (z.isPresent()) {
+//        System.out.println(z.get());
 //    }
 //    
 //     }

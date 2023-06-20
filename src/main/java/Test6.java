@@ -15,6 +15,15 @@ public class Test6 {
 		}
 		System.out.println(hm);
 		
+		System.out.println("-------------");
+		
+		
+       String s1 = "geeksforgeeks";
+		
+		for(int i=0;i<s1.length();i++){
+			  String str1=s1.substring(i);
+			 	System.out.println(str1);}
+		
 	}
 
 }

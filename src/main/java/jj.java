@@ -6,6 +6,9 @@ class HelloWorld {
        h.m1();
     }
 
+//PI1.super.show();-----------for multiple inh
+
+
     static void m1(){
         System.out.println("Inside m1");
     }
