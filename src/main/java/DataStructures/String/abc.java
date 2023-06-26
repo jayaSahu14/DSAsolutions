@@ -3,7 +3,16 @@ package DataStructures.String;
 import java.util.*;
 import java.io.*;
 import java.lang.*;
+
+
 public class abc {
+	
+	public class StringFormatter {  
+		public static String reverseString(String str){  
+		    StringBuilder sb=new StringBuilder(str);  
+		    sb.reverse();  
+		    return sb.toString();  
+		}
 
 
 	 public static void main(String[] args){
@@ -20,5 +29,8 @@ public class abc {
 	    
 	    char ch='d'-'a';
     	int castAscii = (int) ch; System.out.println(castAscii);
+ 	
+    	  System.out.println(StringFormatter.reverseString("my name is khan"));  
+    	    System.out.println(StringFormatter.reverseString("I am sonoo jaiswal"));      
 	}
-	} 
+	}} 

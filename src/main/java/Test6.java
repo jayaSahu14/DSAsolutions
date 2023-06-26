@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Stack;
 
 public class Test6 {
 
@@ -23,6 +24,11 @@ public class Test6 {
 		for(int i=0;i<s1.length();i++){
 			  String str1=s1.substring(i);
 			 	System.out.println(str1);}
+		
+		Stack s= new Stack();
+		s.add(1);
+		s.add(2);
+		System.out.println("stack: "+s);
 		
 	}
 
