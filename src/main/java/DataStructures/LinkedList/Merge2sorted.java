@@ -7,10 +7,12 @@ public class Merge2sorted {
 	        if(b==null)return a;
 	        Node head=null,tail=null;
 	        if(a.data<=b.data){
-	            head=tail=a;a=a.next;
+	            head=tail=a;
+	            a=a.next;
 	        }
 	        else{
-	            head=tail=b;b=b.next;
+	            head=tail=b;
+	            b=b.next;
 	        }
 	        while(a!=null&&b!=null){
 	            if(a.data<=b.data){

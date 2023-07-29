@@ -1,5 +1,8 @@
 package DataStructures.String;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Anagram {
 
 	    static final int CHAR=256;
@@ -20,8 +23,48 @@ public class Anagram {
 	        if(count[i]!=0)return false;
 	    }
 	    return true;
+	    
 	    } 
+
+
+
+
+    public boolean isAnagram(String s, String t) {
+        Map<Character, Integer> count = new HashMap<>();
+        
+        // Count the frequency of characters in string s
+        for (char x : s.toCharArray()) {
+            count.put(x, count.getOrDefault(x, 0) + 1);
+        }
+        
+        // Decrement the frequency of characters in string t
+        for (char x : t.toCharArray()) {
+            count.put(x, count.getOrDefault(x, 0) - 1);
+        }
+        
+        // Check if any character has non-zero frequency
+        for (int val : count.values()) {
+            if (val != 0) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 	  
+	    /*  make arr of 256 , then for every char of string 1, go at arr and increment its place, and for strin2, decrese its val 
+	    
 	    public static void main(String args[]) 
 	    { 
 	        String str1 = "abaac"; 

@@ -21,6 +21,15 @@ public class Jaya {
 		b=a^b;System.out.println("b"+b);
 		a=a^b;System.out.println("a"+a);
 
-
+      System.out.println("meaning of e----------"+1e5);
 	}
 }
+
+
+/*  1e5 means 1 × 10^5.
+
+Similarly, 12.34e-9 means 12.34 × 10−9.
+
+Generally, AeB means A × 10B.
+
+*/
