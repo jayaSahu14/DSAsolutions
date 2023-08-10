@@ -16,6 +16,20 @@ public class Reverse {
 		}return prev;	
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	static Node revList(Node head){
         ArrayList<Integer> arr=new ArrayList<Integer>();
         for(Node curr=head;curr!=null;curr=curr.next){
