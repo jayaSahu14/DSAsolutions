@@ -29,6 +29,7 @@ public class fileHandle {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //try
     }
 
 	public static String getCurrentTime() {
