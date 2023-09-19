@@ -59,15 +59,18 @@ public class StreamListSorting {
 	        employees.add(new Employee6(40, "Pramod", 29, 500000));
 
 	        List < Employee6 > employeesSortedList1 = employees.stream()
-	            .sorted((o1, o2) -> (int)(o1.getSalary() - o2.getSalary())).collect(Collectors.toList());
+	            .sorted((o1, o2) -> (int)(o1.getSalary() - o2.getSalary()))
+	            .collect(Collectors.toList());
 	        System.out.println(employeesSortedList1);
 
 	        List < Employee6 > employeesSortedList2 = employees.stream()
-	            .sorted(Comparator.comparingLong(Employee6::getSalary)).collect(Collectors.toList()); //ascending order
+	            .sorted(Comparator.comparingLong(Employee6::getSalary))
+	            .collect(Collectors.toList()); //ascending order
 	        System.out.println(employeesSortedList2);
 	   
 	        List < Employee6 > employeesSortedList3 = employees.stream()
-	                .sorted((o1, o2) -> (int)(o2.getSalary() - o1.getSalary())).collect(Collectors.toList());
+	                .sorted((o1, o2) -> (int)(o2.getSalary() - o1.getSalary()))
+	                .collect(Collectors.toList());
 	            System.out.println(employeesSortedList1);
 
 	            List < Employee6 > employeesSortedList4 = employees.stream()

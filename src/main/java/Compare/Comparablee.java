@@ -17,6 +17,8 @@ public class Comparablee{
 	studs.add(new Student(20,"Kiran"));
 	Collections.sort(studs);
 	System.out.println(studs);
+	
+	// Collections.sort(al,new Student1(0, null));  
 	}
 }
 

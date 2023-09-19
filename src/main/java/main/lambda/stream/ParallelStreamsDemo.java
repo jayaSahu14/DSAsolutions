@@ -44,21 +44,21 @@ class Student
 		    studentList.add(new Student("Scott", 66));
 			    
 		    //Ex1 : with Single stream
-		    studentList.stream().filter(s -> s.getScore() >= 80)
+		    studentList.stream()
+		                                 .filter(s -> s.getScore() >= 80)
 		    							.limit(3)
 		    							.forEach(stu->System.out.println(stu.getName()+"  "+stu.getScore()));
-		    
-		    
-
-		        
+		    	        
 		    //Ex2 : with Parallel stream2
-		    studentList.parallelStream().filter(s -> s.getScore() >= 80)
+		    studentList.parallelStream()
+		                                .filter(s -> s.getScore() >= 80)
 		    							.limit(3)
 		    							.forEach(stu->System.out.println(stu.getName()+"  "+stu.getScore()));
 		    
 		    
 		    //Ex3 : with Parallel stream2
-		    studentList.stream().parallel().filter(s -> s.getScore() >= 80)
+		    studentList.stream().parallel()
+		                        .filter(s -> s.getScore() >= 80)
 								.limit(3)
 								.forEach(stu->System.out.println(stu.getName()+"  "+stu.getScore()));
 		    
