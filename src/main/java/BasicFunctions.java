@@ -9,6 +9,12 @@ public class BasicFunctions {
 	System.out.println(w);  
 	}  
 	}
+
+String text = "Hello, World!";
+for (int i = 0; i < text.length(); i++) {
+    char character = text.charAt(i);
+    System.out.println(character);
+} //iterate through string char
 	
 	
 

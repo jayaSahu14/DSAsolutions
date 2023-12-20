@@ -19,6 +19,7 @@ public class Demo1 {
 			
 			//distinct
 			
+			
 			List<String> distinctVehicles=vehiclesList.stream().distinct().collect(Collectors.toList());
 			System.out.println(distinctVehicles); //[bus, car, bycle, bike]
 			

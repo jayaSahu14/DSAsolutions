@@ -58,6 +58,7 @@ System.out.println("-------------");
 		System.out.println("------dup elements-------");
 		list.stream().filter(n -> !hs.add(n)).forEach(System.out::println);
 		
+	//	Set<Integer> hs = new HashSet<>(hm.values()); --make set n put all values of hm in set
 		
 		
 		
