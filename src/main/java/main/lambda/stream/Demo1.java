@@ -18,6 +18,8 @@ public class Demo1 {
 			List<String>vehiclesList=Arrays.asList("bus", "car", "bycle", "bus", "car", "car", "bike");
 			
 			//distinct
+			List<String> ans= list.stream().disticnt().coolect(Collectors.toList());
+			
 			
 			
 			List<String> distinctVehicles=vehiclesList.stream().distinct().collect(Collectors.toList());

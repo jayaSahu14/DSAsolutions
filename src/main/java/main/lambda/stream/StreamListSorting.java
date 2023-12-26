@@ -68,11 +68,7 @@ public class StreamListSorting {
 	            .collect(Collectors.toList()); //ascending order
 	        System.out.println(employeesSortedList2);
 	   
-	        List < Employee6 > employeesSortedList3 = employees.stream()
-	                .sorted((o1, o2) -> (int)(o2.getSalary() - o1.getSalary()))
-	                .collect(Collectors.toList());
-	            System.out.println(employeesSortedList1);
-
+	      
 	            List < Employee6 > employeesSortedList4 = employees.stream()
 	                .sorted(Comparator.comparingLong(Employee6::getSalary).reversed()).collect(Collectors.toList()); //ascending order
 	            System.out.println(employeesSortedList2);

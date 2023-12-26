@@ -14,7 +14,7 @@ public class Fm {
 		List<Integer> list1=Arrays.asList(1,2,3,4,5,6);
 		List<Integer> list2= list1.stream().map(n->n+10).collect(Collectors.toList());
 		System.out.println(list2); //[11, 12, 13, 14, 15, 16]
-		
+//		list.stream().map(s->s*2).forEach(System.out::print);
 		//flatMap()
 		List<Integer> lst1=Arrays.asList(1,2);
 		List<Integer> lst2=Arrays.asList(3,4);

@@ -9,7 +9,7 @@ class HelloWorld {
 //PI1.super.show();-----------for multiple inh
 
 
-    static void m1(){
+   public  static void m1(){
         System.out.println("Inside m1");
     }
 }

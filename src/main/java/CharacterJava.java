@@ -33,6 +33,10 @@ So, in summary, the code converts a character ch into its corresponding integer 
 	        // corresponding to its character value
 	        System.out.println("int value: " + a1); //3
 		
+	        
+	        char myChar = 'A';
+	        int asciiValue = (int) myChar;
+
 		
 		
 		

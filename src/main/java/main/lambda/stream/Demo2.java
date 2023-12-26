@@ -14,6 +14,8 @@ public class Demo2 {
 		
 		List<Integer> list1=Arrays.asList(2,4,1,3,7,5,9);
 		List<Integer> sortedlist=list1.stream().sorted().collect(Collectors.toList());
+		System.out.print("----------------");
+		list1.stream().sorted().forEach(System.out::print);
 		
 		System.out.println(sortedlist); //ascendign order
 		
@@ -31,12 +33,12 @@ public class Demo2 {
 		List<String> reversesortedlist2=list2.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
 		System.out.println(reversesortedlist2);
 	
-	
-		 List < String > sortedList1 = fruits.stream().sorted((o1, o2) -> o1.age.compareTo(o2.age)).collect(Collectors.toList());
-	        System.out.println(sortedList1);
-	        List < String > sortedList3 = fruits.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
-	        System.out.println(sortedList3);
-	
+//	
+//		 List < String > sortedList1 = fruits.stream().sorted((o1, o2) -> o1.age.compareTo(o2.age)).collect(Collectors.toList());
+//	        System.out.println(sortedList1);
+//	        List < String > sortedList3 = fruits.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+//	        System.out.println(sortedList3);
+//	
 	        
 	        //list.forEach(  (n)->System.out.println(n));  
 	
